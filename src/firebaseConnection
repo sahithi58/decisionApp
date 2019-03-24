@@ -1,0 +1,21 @@
+
+import axios from 'axios';
+
+const instance=axios.create({
+    baseURL: 'https://shebotbackend-91567.firebaseio.com/'
+});
+
+export default instance;
+------------------------------------------------------
+
+const user={
+            username: ,	
+            type:,
+        }
+
+        axios.post('https://shebotbackend-91567.firebaseio.com/users.json', user)
+        .then(response=>{console.log(response)
+     
+        })
+        .catch(error=>{console.log(error)
+        });
